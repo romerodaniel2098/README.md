@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gestor de Eventos SPA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- LOGIN -->
+  <section id="loginView">
+    <h2>Iniciar sesión</h2>
+    <form id="loginForm">
+      <input type="text" id="loginUsername" placeholder="Usuario" required />
+      <input type="password" id="loginPassword" placeholder="Contraseña" required />
+      <button type="submit">Ingresar</button>
+    </form>
+    <p>¿No tienes cuenta? <a href="#" id="goToRegister">Regístrate</a></p>
+  </section>
+
+  <!-- REGISTRO -->
+  <section id="registerView" style="display: none;">
+    <h2>Registro</h2>
+    <form id="registerForm">
+      <input type="text" id="registerUsername" placeholder="Usuario" required />
+      <input type="password" id="registerPassword" placeholder="Contraseña" required />
+      <select id="registerRole">
+        <option value="visitor">Visitante</option>
+        <option value="administrator">Administrador</option>
+      </select>
+      <button type="submit">Registrarse</button>
+    </form>
+    <p>¿Ya tienes cuenta? <a href="#" id="goToLogin">Inicia sesión</a></p>
+  </section>
+
+  <!-- DASHBOARD -->
+  <section id="dashboardView" style="display: none;">
+    <h2 id="welcomeMsg">Bienvenido</h2>
+    <button id="logoutBtn">Cerrar sesión</button>
+
+    <input type="text" id="searchInput" placeholder="Buscar evento...">
+
+    <!-- Panel admin -->
+    <div id="adminPanel" style="display: none;">
+      <h3>Crear evento</h3>
+      <form id="eventForm">
+        <input type="text" id="eventTitle" placeholder="Título" required />
+        <input type="number" id="eventCapacity" placeholder="Capacidad" required />
+        <button type="submit">Crear</button>
+      </form>
+    </div>
+
+    <ul id="eventList"></ul>
+  </section>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

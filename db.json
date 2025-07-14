@@ -1,0 +1,33 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "admin",
+      "password": "admin123",
+      "role": "administrator"
+    },
+    {
+      "id": "aeec",
+      "username": "Daniel",
+      "password": "Romero123",
+      "role": "visitor"
+    }
+  ],
+  "events": [
+    {
+      "id": "d67a",
+      "title": "Riwi",
+      "capacity": 20,
+      "attendees": [
+        "Mateo",
+        "Daniel"
+      ]
+    },
+    {
+      "id": "c9b7",
+      "title": "Fiesta en Riwi",
+      "capacity": 50,
+      "attendees": []
+    }
+  ]
+}
